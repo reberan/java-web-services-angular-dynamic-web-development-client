@@ -11,6 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Angular CLI: `16.1.3`
 - Node: `18.16.1`
 - Package Manager: `npm 9.7.2`
+- CORS Plugin for your browser (<a href="https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/">Firefox</a>, <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">Chrome</a>, <a href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf">Microsoft Edge</a>)
 
 ## Install Dependencies
 
