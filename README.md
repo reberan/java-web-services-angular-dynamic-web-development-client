@@ -11,6 +11,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Angular CLI: `16.1.3`
 - Node: `18.16.1`
 - Package Manager: `npm 9.7.2`
+- Plugin 'Allow CORS: Access-Control-Allow-Origin' `0.1.9`
 
 ## Install Dependencies
 
