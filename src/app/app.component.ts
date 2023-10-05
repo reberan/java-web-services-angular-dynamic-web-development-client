@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { AppService } from './app.service';
-import { DomSanitizer } from '@angular/platform-browser';
+import {Component, OnInit} from '@angular/core';
+import {AppService} from './app.service';
+import {DomSanitizer} from '@angular/platform-browser';
+import {Video} from "./model/video";
+import {Photo} from "./model/photo";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ export class AppComponent implements OnInit {
   public videos: any;
   public photos: any;
 
-  constructor(private appService: AppService, public sanitizer: DomSanitizer) {}
+  constructor(private appService: AppService, public sanitizer: DomSanitizer) {
+  }
+
   ngOnInit(): void {
     this.loadVideos();
     this.loadPhotos();
@@ -19,7 +23,7 @@ export class AppComponent implements OnInit {
 
   public loadVideos(): void {
     this.appService.getAllVideos().subscribe((response) => {
-      let data = response.map((video: any) => {
+      let data = response.map((video: Video) => {
         return Object.assign({}, video, {
           embedded: this.sanitizer.bypassSecurityTrustResourceUrl(
             video.link.replace('watch?v=', 'embed/')
@@ -31,7 +35,7 @@ export class AppComponent implements OnInit {
   }
 
   public loadPhotos(): void {
-    this.appService.getAllPhotos().subscribe((response) => {
+    this.appService.getAllPhotos().subscribe((response: Photo[]) => {
       this.photos = response;
     });
   }
