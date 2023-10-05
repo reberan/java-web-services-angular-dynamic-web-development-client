@@ -1,6 +1,20 @@
-# ClientDynamicContent
+# Client Dynamic Content ([udemy](https://www.udemy.com))
+
+Course: <b>Java Web Services and REST API with Angular Frontend</b>.<br/>
+Build Java Web Services & REST API - with Spring & Spring Boot. Learn REST API & Web Services <br/>
+Link: https://www.udemy.com/course/java-web-services-angular-dynamic-web-development.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+
+## Requirements
+
+- Angular CLI: `16.1.3`
+- Node: `18.16.1`
+- Package Manager: `npm 9.7.2`
+
+## Install Dependencies
+
+Run `npm install` to install the dependencies in your terminal once moved into the checked out folder.
 
 ## Development server
 
